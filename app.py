@@ -38,7 +38,7 @@ with app.app_context():
 
     u1 = User(username="vasya", password=user_service.make_user_password_hash("my_little_pony"), role="user")
     u2 = User(username="oleg", password=user_service.make_user_password_hash("qwerty"), role="user")
-    u3 = User(username="oleg", password=user_service.make_user_password_hash("P@ssw0rd"), role="admin")
+    u3 = User(username="olega", password=user_service.make_user_password_hash("P@ssw0rd"), role="admin")
 
     with db.session.begin():
         db.session.add_all([u1, u2, u3])

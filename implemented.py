@@ -20,6 +20,3 @@ movie_service = MovieService(dao=movie_dao)
 user_service = UserService(dao=user_dao)
 auth_service = AuthService(user_service=user_service)
 
-
-def user_service():
-    return None
